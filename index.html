@@ -168,6 +168,13 @@
       margin-top: 10px;
     }
 
+    .counter-number {
+      margin-top: 10px;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--red);
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -410,12 +417,9 @@
           </div>
         </div>
         <div class="counter-box">
-          <strong>Live Visitor Count</strong>
-          <p>This counter starts tracking from now and shows how many people are visiting the website.</p>
-          <img
-            alt="Visitor counter for @BananaBoomBoom-m8p Official"
-            src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fmahendrasinghdeora127-web.github.io%2Fbananaboomboom-m8p-site%2F&label=visitors&icon=github&color=%23ff8a00&message=&style=flat"
-          >
+          <strong>Live Site Visits</strong>
+          <p>This counter starts tracking from now and shows total website opens.</p>
+          <div class="counter-number" id="visitorCount">Loading...</div>
         </div>
       </div>
     </section>
@@ -606,6 +610,8 @@
   <script>
     const searchInput = document.getElementById("keywordSearch");
     const tags = Array.from(document.querySelectorAll(".tag"));
+    const counterEl = document.getElementById("visitorCount");
+    const counterKey = "bananaboomboom_m8p_official_site_visits";
 
     searchInput.addEventListener("input", function () {
       const query = this.value.trim().toLowerCase();
@@ -615,6 +621,18 @@
         tag.classList.toggle("hidden", query && !text.includes(query));
       });
     });
+
+    async function loadVisitorCount() {
+      try {
+        const response = await fetch(`https://countapi.mileshilliard.com/api/v1/hit/${counterKey}`);
+        const data = await response.json();
+        counterEl.textContent = data.value ? `${data.value} total visits` : "Counter unavailable";
+      } catch (error) {
+        counterEl.textContent = "Counter unavailable";
+      }
+    }
+
+    loadVisitorCount();
   </script>
 </body>
 </html>
