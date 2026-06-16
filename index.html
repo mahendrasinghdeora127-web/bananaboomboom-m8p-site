@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BananaBoomBoom | Viral YouTube Shorts, Funny Videos and Subscribe Hub</title>
+  <meta name="description" content="Discover BananaBoomBoom YouTube channel for funny shorts, viral entertainment videos, trending content ideas, searchable tags and a direct subscribe button.">
+  <meta name="keywords" content="BananaBoomBoom, BananaBoomBoom YouTube, funny shorts, viral shorts, comedy videos, entertainment channel, trending YouTube shorts, subscribe BananaBoomBoom, latest shorts, funny Hindi videos, meme videos, family friendly shorts, reels style videos, viral comedy clips">
+  <meta property="og:title" content="BananaBoomBoom YouTube Growth Hub">
+  <meta property="og:description" content="Searchable keywords, subscribe button, content ideas and growth tips for BananaBoomBoom.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --bg: #fff8e8;
+      --panel: rgba(255, 255, 255, 0.78);
+      --ink: #20160f;
+      --soft: #6e5b4b;
+      --yellow: #ffd54f;
+      --orange: #ff8a00;
+      --red: #ff4d36;
+      --green: #2d9b60;
+      --line: rgba(32, 22, 15, 0.12);
+      --shadow: 0 20px 45px rgba(64, 31, 7, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(255, 213, 79, 0.7), transparent 28%),
+        radial-gradient(circle at 85% 12%, rgba(255, 77, 54, 0.25), transparent 20%),
+        linear-gradient(160deg, #fffdf6 0%, #fff2bf 42%, #ffe3c0 100%);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    .hero,
+    .panel {
+      background: var(--panel);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      padding: 34px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 18px 0 14px;
+      font-size: clamp(2.3rem, 6vw, 4.6rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p,
+    .panel p,
+    li {
+      font-size: 1.03rem;
+      line-height: 1.7;
+      color: var(--soft);
+    }
+
+    .accent {
+      color: var(--red);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn.primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--red), #ff7958);
+      box-shadow: 0 16px 28px rgba(255, 77, 54, 0.28);
+    }
+
+    .btn.secondary {
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .hero-card {
+      padding: 24px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255, 236, 177, 0.95));
+      border: 1px solid rgba(32, 22, 15, 0.08);
+    }
+
+    .stat {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .stat div {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.88);
+      border: 1px solid var(--line);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 22px;
+      margin-top: 22px;
+    }
+
+    .panel {
+      padding: 26px;
+    }
+
+    .search-panel {
+      grid-column: span 7;
+    }
+
+    .tips-panel {
+      grid-column: span 5;
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.55rem;
+      letter-spacing: -0.03em;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 15px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      font-size: 1rem;
+      outline: none;
+      background: rgba(255,255,255,0.92);
+    }
+
+    .keyword-wall {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid rgba(32,22,15,0.1);
+      font-size: 0.94rem;
+      color: var(--ink);
+      box-shadow: 0 8px 16px rgba(35, 23, 12, 0.05);
+    }
+
+    .tag.hidden {
+      display: none;
+    }
+
+    .tips-list,
+    .check-list,
+    .faq {
+      margin: 14px 0 0;
+      padding-left: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .mini-card {
+      padding: 18px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,247,221,0.88));
+    }
+
+    .mini-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.02rem;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .video-card {
+      padding: 14px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,243,204,0.9));
+      box-shadow: 0 10px 22px rgba(35, 23, 12, 0.06);
+    }
+
+    .video-frame {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      border: 0;
+      border-radius: 18px;
+      background: #000;
+    }
+
+    .video-card h3 {
+      margin: 14px 0 8px;
+      font-size: 1.02rem;
+      line-height: 1.35;
+    }
+
+    .video-card p {
+      margin: 0 0 12px;
+      font-size: 0.95rem;
+    }
+
+    .subscribe-strip {
+      margin-top: 22px;
+      padding: 20px 22px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #20160f, #51351d);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .subscribe-strip p {
+      margin: 6px 0 0;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .subscribe-strip .btn {
+      white-space: nowrap;
+      background: var(--yellow);
+      color: #20160f;
+    }
+
+    .visitor-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .visitor-card {
+      padding: 18px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,239,188,0.9));
+      border: 1px solid var(--line);
+    }
+
+    .visitor-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.04rem;
+    }
+
+    footer {
+      margin-top: 26px;
+      text-align: center;
+      color: var(--soft);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .search-panel,
+      .tips-panel {
+        grid-column: 1 / -1;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .visitor-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .subscribe-strip {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <div class="badge">YouTube Growth Landing Page</div>
+        <h1>Make <span class="accent">BananaBoomBoom</span> easy to find, easy to trust and easy to subscribe.</h1>
+        <p>
+          This page is built to help people discover <strong>@BananaBoomBoom-m8p</strong> through searchable topics,
+          quick channel positioning and a strong YouTube subscribe call to action.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://www.youtube.com/@BananaBoomBoom-m8p" target="_blank" rel="noopener noreferrer">Subscribe on YouTube</a>
+          <a class="btn secondary" href="#keywords">Search Keywords</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>Fast Growth Focus</h2>
+        <p>Discoverability + repeatable content + strong thumbnails + audience retention.</p>
+        <div class="stat">
+          <div>
+            <strong>3x</strong>
+            <span>More reach with Shorts + long video mix</span>
+          </div>
+          <div>
+            <strong>24h</strong>
+            <span>Reply to comments quickly after upload</span>
+          </div>
+          <div>
+            <strong>1 Hook</strong>
+            <span>Grab attention in the first 2 seconds</span>
+          </div>
+          <div>
+            <strong>7 Days</strong>
+            <span>Maintain a consistent posting cycle</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="panel search-panel" id="keywords">
+        <h2>Searchable Keyword Library</h2>
+        <p>Use the search box to filter keyword ideas for titles, descriptions, website copy and hashtags.</p>
+        <input id="keywordSearch" class="search-box" type="text" placeholder="Search keywords like funny, viral, shorts, comedy, hindi...">
+        <div class="keyword-wall" id="keywordWall">
+          <span class="tag">BananaBoomBoom</span>
+          <span class="tag">BananaBoomBoom YouTube channel</span>
+          <span class="tag">BananaBoomBoom shorts</span>
+          <span class="tag">BananaBoomBoom funny videos</span>
+          <span class="tag">viral shorts</span>
+          <span class="tag">funny shorts</span>
+          <span class="tag">Hindi comedy shorts</span>
+          <span class="tag">trending shorts India</span>
+          <span class="tag">viral comedy clips</span>
+          <span class="tag">family friendly shorts</span>
+          <span class="tag">entertainment YouTube channel</span>
+          <span class="tag">best funny YouTube shorts</span>
+          <span class="tag">new viral video</span>
+          <span class="tag">daily shorts channel</span>
+          <span class="tag">funny meme style videos</span>
+          <span class="tag">reels style comedy content</span>
+          <span class="tag">short comedy videos</span>
+          <span class="tag">must watch shorts</span>
+          <span class="tag">latest comedy video</span>
+          <span class="tag">viral entertainment</span>
+          <span class="tag">funny Hindi content creator</span>
+          <span class="tag">snackable video content</span>
+          <span class="tag">comedy shorts India</span>
+          <span class="tag">viral laugh videos</span>
+          <span class="tag">best shorts for fun</span>
+          <span class="tag">quick fun videos</span>
+          <span class="tag">funny moments compilation</span>
+          <span class="tag">trending comedy page</span>
+          <span class="tag">watch and subscribe channel</span>
+          <span class="tag">engaging short videos</span>
+          <span class="tag">YouTube shorts creator India</span>
+          <span class="tag">viral content ideas</span>
+          <span class="tag">fun channel to subscribe</span>
+          <span class="tag">comedy and entertainment hub</span>
+          <span class="tag">shareable funny videos</span>
+          <span class="tag">youth entertainment channel</span>
+          <span class="tag">short video creator</span>
+          <span class="tag">funny YouTube videos Hindi</span>
+          <span class="tag">viral clip channel</span>
+          <span class="tag">trending laugh content</span>
+        </div>
+      </section>
+
+      <section class="panel tips-panel">
+        <h2>Channel Ko Fast Grow Karne Ke Best Tarike</h2>
+        <ul class="tips-list">
+          <li>Har video ke first 2 seconds mein strong hook rakho: surprise, punchline ya question.</li>
+          <li>Week mein 5 to 7 Shorts aur 1 ya 2 slightly longer videos upload karo.</li>
+          <li>Same topic ke around mini series banao taaki viewers next part ka wait karein.</li>
+          <li>Thumbnail par 2 to 4 words ka bold text rakho, zyada clutter mat karo.</li>
+          <li>Comments ka fast reply do, especially upload ke first 24 hours mein.</li>
+          <li>Har description mein 1 main keyword aur 3 related keywords naturally use karo.</li>
+          <li>Trending audio, memes ya current topics ko apne style mein adapt karo.</li>
+          <li>Instagram Reels aur Facebook par same clip ka teaser daal kar YouTube par bhejo.</li>
+        </ul>
+      </section>
+
+      <section class="panel full">
+        <h2>Watch Shorts Directly From This Website</h2>
+        <p>Yahan se visitors aapke Shorts direct dekh sakte hain. Har card ke niche YouTube par open karne ka button bhi diya gaya hai.</p>
+        <div class="video-grid">
+          <article class="video-card">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/HetnRrCoM-g" title="Banana pressed a magic remote" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Banana pressed a magic remote</h3>
+            <p>Fast forward comedy short with a strong ending hook.</p>
+            <a class="btn secondary" href="https://www.youtube.com/shorts/HetnRrCoM-g" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+          </article>
+          <article class="video-card">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/nHBAJyE4blw" title="Can banana stump you? Beach edition" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Can banana stump you? Beach edition</h3>
+            <p>Challenge-style short that works well for repeat views.</p>
+            <a class="btn secondary" href="https://www.youtube.com/shorts/nHBAJyE4blw" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+          </article>
+          <article class="video-card">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/A_F-M8NLJXg" title="When your dinner decides to escape" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>When your dinner decides to escape</h3>
+            <p>Comedy action short designed for quick engagement.</p>
+            <a class="btn secondary" href="https://www.youtube.com/shorts/A_F-M8NLJXg" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+          </article>
+          <article class="video-card">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/sEWaxpJQ0AQ" title="Banana slip turned into the coolest moment" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Banana slip turned into the coolest moment</h3>
+            <p>Funny fail content that can attract shares and replays.</p>
+            <a class="btn secondary" href="https://www.youtube.com/shorts/sEWaxpJQ0AQ" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+          </article>
+          <article class="video-card">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/wCcGXNH8vhQ" title="Banana's Epic Backflip Fail" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Banana's Epic Backflip Fail</h3>
+            <p>Short punchy comedy with a natural subscribe audience.</p>
+            <a class="btn secondary" href="https://www.youtube.com/shorts/wCcGXNH8vhQ" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+          </article>
+          <article class="video-card">
+            <iframe class="video-frame" src="https://www.youtube.com/embed/RFubn5jx3yg" title="Where's My Banana" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Where's My Banana?!</h3>
+            <p>Simple curiosity title that helps improve click-through.</p>
+            <a class="btn secondary" href="https://www.youtube.com/shorts/RFubn5jx3yg" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel wide">
+        <h2>Content System That Usually Grows Faster</h2>
+        <div class="cards">
+          <div class="mini-card">
+            <strong>Series Format</strong>
+            <p>Examples: "Part 1", "Expectation vs Reality", "Funny Challenge", "Banana Reaction". Series se repeat viewers badhte hain.</p>
+          </div>
+          <div class="mini-card">
+            <strong>Title Formula</strong>
+            <p>Use simple titles like "Ye Dekhkar Hasi Nahi Rukegi", "Only Legends Will Understand", "Wait for the Ending".</p>
+          </div>
+          <div class="mini-card">
+            <strong>Retention Trick</strong>
+            <p>Beginning mein result tease karo, middle fast rakho, ending mein twist do. Har second important hona chahiye.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel wide">
+        <h2>7-Day Posting Checklist</h2>
+        <ul class="check-list">
+          <li>1 main niche choose karo: comedy, roast-lite, reactions, challenges, meme edits, or mixed fun content.</li>
+          <li>Har din 3 title options aur 10 hashtags pehle se ready rakho.</li>
+          <li>Same day 1 short clip ko YouTube Shorts, Instagram Reels aur status format mein reuse karo.</li>
+          <li>Best performing video ke 3 variations banao with new opening shot.</li>
+          <li>Audience se har 3rd video mein simple CTA bolo: "Aisi aur videos ke liye subscribe karo".</li>
+          <li>Analytics mein average view duration aur swipe-away rate weekly check karo.</li>
+        </ul>
+      </section>
+
+      <section class="panel wide">
+        <h2>FAQ for Viewers and Search Engines</h2>
+        <ul class="faq">
+          <li>What is BananaBoomBoom? It is a fun video destination for viral shorts, comedy moments and quick entertainment.</li>
+          <li>Why subscribe to BananaBoomBoom? Because the channel focuses on frequent, engaging and shareable short-form videos.</li>
+          <li>What type of videos can viewers expect? Funny shorts, viral entertainment, meme-style edits and snackable content.</li>
+        </ul>
+
+        <div class="subscribe-strip">
+          <div>
+            <strong>Ready to turn visitors into subscribers?</strong>
+            <p>Send every social profile, bio and status link to this page and push one clear action: subscribe now.</p>
+          </div>
+          <a class="btn" href="https://www.youtube.com/@BananaBoomBoom-m8p" target="_blank" rel="noopener noreferrer">Subscribe Now</a>
+        </div>
+      </section>
+
+      <section class="panel wide">
+        <h2>Visitor Section</h2>
+        <p>Jo naye visitors is website par aayenge unke liye yeh section clear batata hai ki channel kyun dekhna chahiye aur kya expect karna chahiye.</p>
+        <div class="visitor-grid">
+          <div class="visitor-card">
+            <strong>New Visitor Start Here</strong>
+            <p>Sabse pehle Shorts section dekho, phir jo video pasand aaye uske through channel par jaakar subscribe karo.</p>
+          </div>
+          <div class="visitor-card">
+            <strong>What You Will Watch</strong>
+            <p>Funny banana shorts, quick comedy clips, shareable moments aur short-form entertainment content.</p>
+          </div>
+          <div class="visitor-card">
+            <strong>Why Come Back Again</strong>
+            <p>Regular new Shorts, easy-to-watch format aur fast entertaining videos jo mobile par quickly consume ho sakein.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      Built for <strong>@BananaBoomBoom-m8p</strong> with SEO-friendly text, keywords and a direct YouTube subscribe call to action.
+    </footer>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("keywordSearch");
+    const tags = Array.from(document.querySelectorAll(".tag"));
+
+    searchInput.addEventListener("input", function () {
+      const query = this.value.trim().toLowerCase();
+
+      tags.forEach((tag) => {
+        const text = tag.textContent.toLowerCase();
+        tag.classList.toggle("hidden", query && !text.includes(query));
+      });
+    });
+  </script>
+</body>
+</html>
